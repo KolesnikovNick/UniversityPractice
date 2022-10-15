@@ -1,0 +1,47 @@
+.beautiful
+    background: $beautiful-gradient
+    position: relative
+    height: 100vh
+    &__container
+        display: flex
+        flex-direction: column
+        height: 100%
+        padding-top: 200px
+    &__figure
+        overflow: hidden
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+    &__image
+        width: 100vw
+        object-fit: cover
+        height: 100vh
+    &__text
+        &_big
+            width: 519px
+            max-width: 100%
+            margin-bottom: 16px
+        &_small
+            width: 428px
+            max-width: 100%
+        &_active
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: -0.502564px
+    &__listings
+        padding-left: 40px
+        background-color: $white
+        height: 100px
+        border-radius: 0 28px 0 0
+        color: $black
+        margin: auto 0 0
+        display: flex
+        
+        img
+            padding-left: 15px

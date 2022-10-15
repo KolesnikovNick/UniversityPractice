@@ -1,0 +1,52 @@
+.black-hands
+    margin: 150px auto 0px auto
+    padding: 150px 0px
+    background: $black-hands-gradient
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__line
+        width: 169px
+    &__text
+        &_big
+            margin-top: 17px
+            margin-bottom: 4px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 50px
+            line-height: 65px
+            text-align: center
+            letter-spacing: -1.25641px
+            color: $white
+        &_small
+            width: 428px
+            max-width: 100%
+            margin: 0 321px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            text-align: center
+            letter-spacing: -0.502564px
+            color: $white
+            mix-blend-mode: normal
+            opacity: 0.6
+    &__button
+        background-color: $main-orange
+        width: 209px
+        height: 70px
+        margin: 30px auto 0px auto
+
+@media only screen and (max-width: 991px)
+    .black-hands
+        &__text
+            &_big
+                font-size: 35px
+                line-height: 46px
+            &_small
+                margin: 0px
+                font-size: 15px
+                line-height: 21px

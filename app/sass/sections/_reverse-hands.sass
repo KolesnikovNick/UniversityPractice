@@ -1,0 +1,115 @@
+.reverse-hands
+    &__container
+        display: flex
+        flex-direction: row-reverse
+        align-items: flex-end
+        padding: 222px 0px 0px 114px
+    &__text
+        margin-left: 185px
+        margin-right: 77px
+        width: 474px
+        max-width: 100%
+        &_big
+            margin: 0 0 20px 0
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 50px
+            line-height: 65px
+            letter-spacing: -1.25641px
+            color: $black
+        &_small
+            margin: 0
+            font-family: DM Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            letter-spacing: -0.502564px
+            color: $black
+            mix-blend-mode: normal
+            opacity: 0.6
+    &__line
+        margin-bottom: 17px
+        width: 169px
+    &__image
+        width: 50%
+        & img
+            width: 100%
+            height: 657px
+            object-fit: cover
+            filter: $reverse-hands-shadow
+            border-radius: 57px 0 0 0
+    &__button
+        & button
+            margin-top: 30px
+            width: 211px
+            height: 70px
+            color: white
+            background-color: $black
+
+@media only screen and (max-width: 1554px)
+    .reverse-hands
+        &__text
+            margin-left: 0px
+
+@media only screen and (max-width: 1369px)
+        .reverse-hands
+            &__container
+                padding: 222px 0px 0px 40px
+            &__text
+                margin-right: 20px
+
+@media only screen and (max-width: 1200px)
+    .reverse-hands
+        &__container
+            flex-direction: column
+            align-items: center
+            padding: 222px 0 0 0
+        &__text
+            padding-top: 40px
+            &_big
+                padding: 0  
+            &_small
+                padding: 0            
+        &__image
+            width: 100%
+            img
+                height: 100%
+@media only screen and (max-width: 991px)
+    .reverse-hands
+        &__container
+            flex-direction: column
+            padding: 150px auto 0px auto
+            width: 100%
+        &__image
+            & img
+                object-fit: contain
+                max-width: 100%
+                max-height: 100%
+
+@media only screen and (max-width: 620px)
+    .reverse-hands
+        &__container
+            padding: 222px 0px 0px 0px
+            width: 100%
+            max-width: 100%
+            &__image
+                max-width: 100%
+                & img
+                    object-fit: none
+                    height: 100%
+                    width: 100%
+                    max-width: 100%
+                    max-height: 100%
+        &__text
+            padding-left: 20px
+            &_big
+                padding: 0
+                font-size: 40px
+            &_small
+                padding: 0 44px 0 0
+                font-size: 17px 
+        &__button
+            margin-top: 30px
+            text-align: center

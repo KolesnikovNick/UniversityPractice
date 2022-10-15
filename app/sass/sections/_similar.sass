@@ -1,0 +1,59 @@
+.similar
+    &__container
+        margin-bottom: 150px
+    &__item
+        overflow: hidden
+        background-color: $white
+        border-radius: 25px
+        margin-top: 31px
+        margin-right: 29px
+    &__text
+        &_main
+            margin-top: 17px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 50px
+            line-height: 65px
+            letter-spacing: -1.25641px
+            color: $black
+        &_big
+            margin-top: 28px
+            padding-bottom: 14px
+            padding-left: 30px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 31px
+            letter-spacing: -0.603077px
+            border-bottom: 1px solid $cyan      
+        &_small
+            text-align: center
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 17px
+            line-height: 22px
+            letter-spacing: -0.427179px
+            color: $black
+            padding: 27.5px 0px 25.5px 0px
+            border-right: 1px solid $cyan
+            &:first-child
+                padding-left: 12px
+            &:last-child
+                border: none
+                padding-right: 12px
+    &__line
+        width: 169px
+    &__icon
+        margin-right: 10px
+    &__image
+        & img
+            width: 100%
+            object-fit: cover
+
+@media only screen and (max-width: 991px)
+    .similar
+        &__container
+            margin-top: 75px

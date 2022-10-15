@@ -1,0 +1,105 @@
+.places
+    &__container
+        padding-top: 215px
+    &__text
+        &_main
+            padding: 22px 0px 47px 0px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 50px
+            line-height: 65px
+            letter-spacing: -1.25641px
+            color: $black
+    &__line
+        width: 169px
+.filter
+    display: flex
+    justify-content: space-between
+    margin-bottom: 76px
+    max-width: 100%
+    &__select
+        width: 25%
+        padding: 40px 121px 40px 40px
+        font-family: DM Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 17px
+        line-height: 22px
+        letter-spacing: -0.427179px
+        color: $black
+        border-right: 1px solid $light-green
+        &:last-child
+            border: none
+.examples
+    &__item
+        overflow: hidden
+        background-color: $white
+        box-shadow: $places-shadow
+        border-radius: 25px
+        padding: 0px
+    &__text
+        &_big
+            margin-top: 28px
+            padding-bottom: 14px
+            padding-left: 30px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 31px
+            letter-spacing: -0.603077px
+            border-bottom: 1px solid $cyan
+        &_small
+            text-align: center
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 17px
+            line-height: 22px
+            letter-spacing: -0.427179px
+            color: $black
+            padding: 27.5px 0px 25.5px 0px
+            border-right: 1px solid $cyan
+            &:first-child
+                padding-left: 12px
+            &:last-child
+                border: none
+                padding-right: 12px
+    &__icon
+        margin-right: 10px
+    &__image
+        height: 266px
+        & img
+            width: 100%
+            height: 100%
+            max-width: 100%
+            max-height: 100%
+            object-fit: cover
+
+@media only screen and (max-width: 1200px)
+    .filter
+        &__select
+            padding: 40px 60px 40px 21px
+
+@media only screen and (max-width: 992px)
+    .filter
+        &__select
+            padding: 40px 30px 40px 21px
+
+@media only screen and (max-width: 768px)
+    .filter
+        margin-left: 30px
+        flex-wrap: wrap
+        justify-content: stretch
+        &__select
+            font-size: 12px
+            line-height: 16px
+            letter-spacing: -0.306862px
+            width: calc( 50% )
+            &:nth-child(-n+2)
+                border-bottom: 1px solid $cyan
+            &:nth-last-child(odd)
+                border-right: none
+            & select
+                background-size: 10px

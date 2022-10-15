@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/d43d363efb.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header header_main">
+        <div class="container header__container">
+            <a href="#" class="logo"><img src="./img/Logo.svg" alt="Logo"></a>
+            <input class="side-menu" type="checkbox" id="side-menu" onclick="mobileMenu()" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Nav Link</a> </li>
+                    <li><a href="./property-page.html">Property page</a></li>
+                    <li><a href="./properties.html">All properties</a></li>
+                </ul>
+                <button class="button button_yellow menu__button" id="modal-work-button-open">Work with us <img
+                        src="./img/Arrow White.svg" alt="arrow" /></button>
+            </nav>
+        </div>
+    </header>
+    <div id="modal-work" class="modal">
+        <div class="content">
+            <span class="close-modal-work">&times;</span>
+            <div class="content__wrapper">
+                <div class="register">
+                    <p class="register__text">Registration</p>
+                    <label for="reg_name">Name</label>
+                    <input type="text" id="reg_name" placeholder="Name" />
+                    <label for="reg_surname">Surname</label>
+                    <input type="text" id="reg_surname" placeholder="Surname" />
+                    <label for="reg_email">E-mail</label>
+                    <input type="text" id="reg_email" placeholder="E-mail" />
+                    <label for="reg_pass">Password</label>
+                    <input type="text" id="reg_pass" placeholder="Password" />
+                    <label for="reg_passconf">Password Confirm</label>
+                    <input type="text" id="reg_passconf" placeholder="Password confirm" />
+                    <button class="button button_yellow register__button">Registration</button>
+                </div>
+                <div class="login">
+                    <p class="login__text">Login</p>
+                    <label for="log_email">E-mail</label>
+                    <input type="text" id="log_email" placeholder="E-mail" />
+                    <label for="log_pass">Password</label>
+                    <input type="text" id="log_pass" placeholder="Password" />
+                    <button class="button button_yellow login__button">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="beautiful">
+        <figure class="beautiful__figure">
+            <img class="beautiful__image" src="./img/BG_photo.png" alt="bg photo" />
+        </figure>
+        <div class="beautiful__container container">
+            <h1 class="beautiful__text beautiful__text_big">Beautiful homes made for you</h1>
+            <p class="text beautiful__text beautiful__text_small">
+                In oculis quidem se esse admonere interesse enim maxime placeat, facere possimus, omnis. Et
+                quidem
+                faciunt, ut labore et accurate disserendum et harum quidem exercitus quid.
+            </p>
+            <div class="beautiful__listings">
+                <button class="beautiful__text beautiful__text_active">See all listings<img src="./img/Arrow Yellow.svg"
+                        alt="Yellow arrow" /></button>
+            </div>
+        </div>
+    </section>
+    <section class="hands">
+        <div class="hands__container">
+            <div class="hands__image">
+                <img src="./img/Hands.png" alt="hands" />
+            </div>
+            <div class="hands__text">
+                <div class="line hands__line"></div>
+                <p class="hands__text hands__text_big">You’re in good hands</p>
+                <p class="hands__text hands__text_small">Torquatos nostros? quos dolores eos, qui dolorem ipsum per se
+                    texit, ne
+                    ferae quidem se repellere,
+                    idque instituit docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi
+                    involuta aperiri, altera occulta quaedam et voluptatem accusantium doloremque.</p>
+                <div class="hands__button">
+                    <button class="button button_black" href="#">Learn more <img src="./img/Arrow Yellow.svg"
+                            alt="arrow" /></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="places">
+        <div class="places__container container">
+            <div class="line places__line"></div>
+            <div class="places__text places__text_main">Find your next place to live</div>
+            <div class="filter">
+                <div class="select filter__select">
+                    <select>
+                        <option value="0">Looking for</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                    </select>
+                </div>
+                <div class="select filter__select">
+                    <select>
+                        <option value="0">Location</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                    </select>
+                </div>
+                <div class="select filter__select">
+                    <select>
+                        <option value="0">Property Type</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                    </select>
+                </div>
+                <div class="select filter__select">
+                    <select>
+                        <option value="0">Price</option>
+                        <option value="1">Audi</option>
+                        <option value="2">BMW</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row gy-5 gx-md-5 gx-0 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="examples__item">
+                        <div class="examples__image">
+                            <img src="./img/BG_photo.png" alt="HouseEx1" />
+                        </div>
+                        <div class="examples__text examples__text_big">
+                            <p>Maloto house</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/Bed.svg" alt="bed" />4</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/bathroom.svg" alt="bath" />2</div>
+                            <div class="col-4 examples__text_small"><img class="examples__icon"
+                                    src="./img/grid-artboard.svg" alt="art" />2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="examples__item">
+                        <div class="examples__image">
+                            <img src="./img/HouseEx2.png" alt="HouseEx2" />
+                        </div>
+                        <div class="examples__text examples__text_big">
+                            <p>Maloto house</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/Bed.svg" alt="bed" />4</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/bathroom.svg" alt="bath" />2</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/grid-artboard.svg" alt="art" />2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="examples__item">
+                        <div class="examples__image">
+                            <img src="./img/HouseEx3.png" alt="HouseEx3" />
+                        </div>
+                        <div class="examples__text examples__text_big">
+                            <p>Maloto house</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/Bed.svg" alt="bed" />4</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/bathroom.svg" alt="bath" />2</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/grid-artboard.svg" alt="art" />2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="examples__item">
+                        <div class="examples__image">
+                            <img src="./img/HouseEx4.png" alt="HouseEx4" />
+                        </div>
+                        <div class="examples__text examples__text_big">
+                            <p>Maloto house</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/Bed.svg" alt="bed" />4</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/bathroom.svg" alt="bath" />2</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/grid-artboard.svg" alt="art" />2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="examples__item">
+                        <div class="examples__image">
+                            <img src="./img/HouseEx5.png" alt="HouseEx5" />
+                        </div>
+                        <div class="examples__text examples__text_big">
+                            <p>Maloto house</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/Bed.svg" alt="bed" />4</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/bathroom.svg" alt="bath" />2</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/grid-artboard.svg" alt="art" />2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="examples__item">
+                        <div class="examples__image">
+                            <img src="./img/HouseEx6.png" alt="HouseEx6" />
+                        </div>
+                        <div class="examples__text examples__text_big">
+                            <p>Maloto house</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/Bed.svg" alt="bed" />4</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/bathroom.svg" alt="bath" />2</div>
+                            <div class="col-4 examples__text examples__text_small"><img class="examples__icon"
+                                    src="./img/grid-artboard.svg" alt="art" />2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reverse-hands">
+        <div class="reverse-hands__container">
+            <div class="reverse-hands__image">
+                <img src="./img/Hands.png" alt="hands" />
+            </div>
+            <div class="reverse-hands__text reverse-hands__text_main">
+                <div class="reverse-hands__line line"></div>
+                <p class="reverse-hands__text reverse-hands__text_big">You’re in good hands</p>
+                <p class="reverse-hands__text reverse-hands__text_small">Torquatos nostros? quos dolores eos, qui
+                    dolorem ipsum per se
+                    texit, ne ferae quidem se repellere,
+                    idque instituit docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi
+                    involuta aperiri, altera occulta quaedam et voluptatem accusantium doloremque.</p>
+                <div class="reverse-hands__button">
+                    <button class="button button_black" href="#">Learn more <img src="./img/Arrow Yellow.svg"
+                            alt="arrow" /></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="black-hands">
+        <div class="container black-hands__container">
+            <div class="line black-hands__line"></div>
+            <p class="black-hands__text black-hands__text_big">You're in good hands</p>
+            <p class="black-hands__text black-hands__text_small">Torquatos nostros? quos dolores eos, qui dolorem ipsum
+                per se texit, ne ferae quidem se
+                repellere, idque instituit docere sic: omne animal, simul atque integre iudicante itaque aiunt
+                hanc quasi involuta aperiri, altera occulta quaedam et voluptatem accusantium doloremque.</p>
+            <div style="text-align: center;">
+                <button class="button button_yellow black-hands__button">Learn more <img src="./img/Arrow White.svg"
+                        alt="arrow white" /></button>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="quote__container container">
+            <div class="row justify-content-center">
+                <div class="slider__quotes">
+                    <div class="col-lg-4">
+                        <div class="quote__hidden" id="quote1">
+                            <div class="col-lg-12">
+                                <div class="line quote__line"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="quote__text">“Certe, inquam, pertinax non existimant oportere exquisitis
+                                    rationibus conquisitis de quo
+                                    enim
+                                    ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”</p>
+                            </div>
+                        </div>
+                        <div class="quote__man" onmouseover="changeVisibility('quote1', '1', '0px')"
+                            onmouseout="changeVisibility('quote1', '0', '-200px')">
+                            <div class="quote__info">
+                                <div class="quote__avatar"><img src="./img/Lara.svg" alt="lara" />
+                                </div>
+                                <div>
+                                    Lara Madrigal<br />
+                                    <p class="quote__text quote__text_invisible">Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="quote__hidden" id="quote2">
+                            <div class="col-lg-12">
+                                <div class="line quote__line"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="quote__text">“Certe, inquam, pertinax non existimant oportere exquisitis
+                                    rationibus conquisitis de quo
+                                    enim
+                                    ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”</p>
+                            </div>
+                        </div>
+                        <div class="quote__man" onmouseover="changeVisibility('quote2', '1', '0px')"
+                            onmouseout="changeVisibility('quote2', '0', '-200px')">
+                            <div class="quote__info">
+                                <div class="quote__avatar"><img src="./img/Lara.svg" alt="lara" />
+                                </div>
+                                <div>
+                                    Lara Madrigal<br />
+                                    <p class="quote__text quote__text_invisible">Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="quote__hidden" id="quote3">
+                            <div class="col-lg-12">
+                                <div class="line quote__line"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <p class="quote__text">“Certe, inquam, pertinax non existimant oportere exquisitis
+                                    rationibus conquisitis de quo
+                                    enim
+                                    ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”</p>
+                            </div>
+                        </div>
+                        <div class="quote__man" onmouseover="changeVisibility('quote3', '1', '0px')"
+                            onmouseout="changeVisibility('quote3', '0', '-200px')">
+                            <div class="quote__info">
+                                <div class="quote__avatar"><img src="./img/Lara.svg" alt="lara" />
+                                </div>
+                                <div>
+                                    Lara Madrigal<br />
+                                    <p class="quote__text quote__text_invisible">Client</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__dreams">
+                <div class="footer__text">
+                    Make your dreams a <b style="color: #FFAC12">reality</b>
+                </div>
+                <div>
+                    <button class="button button_yellow footer__button">Work with us <img src="./img/Arrow White.svg"
+                            alt="White arrow"></button>
+                </div>
+            </div>
+            <div class="links">
+                <div class="links__contacts">
+                    <div class="links__logo">
+                        <img src="./img/Logo.svg" alt="Logo" />
+                    </div>
+                    <div class="links__media">
+                        <a href="#"><i class="fa fa-facebook-f social-media"></i></a>
+                        <a href="#"><i class="fa fa-twitter social-media"></i></a>
+                        <a href="#"><i class="fa fa-instagram social-media"></i></a>
+                    </div>
+                </div>
+                <div class="links__item">
+                    <ul>Column heading
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                    </ul>
+                </div>
+                <div class="links__item">
+                    <ul>Column heading
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                    </ul>
+                </div>
+                <div class="links__item">
+                    <ul>Column heading
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                        <li><a href="#">Link goes here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./css/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/jquery_slick.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

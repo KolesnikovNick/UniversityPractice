@@ -1,0 +1,193 @@
+.house
+    &__icon
+        width: 16px
+        height: 16px
+        margin-right: 10px
+.house-details
+    margin-top: 60px
+    &__image
+        &_small
+            margin-top: 20px
+            max-width: 100%
+        &_big
+            border-radius: 0px 57px 0px 0px
+            width: 100vw
+            max-height: 520px
+            max-width: 100%
+            object-fit: cover
+.info
+    margin-top: 40px
+    background-color: $white
+    border-radius: 25px
+    &__text
+        &_big
+            margin-top: 30px
+            padding-bottom: 10px
+            padding-left: 25px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: -0.502564px
+            color: $black
+        &_small
+            text-align: center
+            padding-top: 30px
+            padding-bottom: 12px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 22px
+            letter-spacing: -0.376923px
+            color: $black
+            border-top: 1px solid $light-green
+            border-right: 1px solid $light-green
+            &:last-child
+                border-right: none
+.description
+    margin-top: 44px
+    background-color: $white
+    border-radius: 25px
+    &__text
+        &_big
+            margin-top: 30px
+            padding-bottom: 10px
+            padding-left: 25px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: -0.502564px
+            color: $black
+            border-bottom: 1px solid $light-green
+        &_small
+            padding: 35px 30px 30px 30px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 22px
+            letter-spacing: -0.376923px
+            color: $black
+            mix-blend-mode: normal
+            opacity: 0.6
+.features
+    margin-bottom: 150px
+    margin-top: 44px
+    background-color: $white
+    border-radius: 25px
+    &__text
+        &_big
+            margin-top: 30px
+            padding-bottom: 10px
+            padding-left: 25px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 26px
+            letter-spacing: -0.502564px
+            color: $black
+            border-bottom: 1px solid $light-green
+        &_small
+            padding-left: 25px
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            margin-top: 30px
+            margin-bottom: 12px
+            font-family: DM Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 22px
+            letter-spacing: -0.376923px
+            color: $black
+            mix-blend-mode: normal
+            opacity: 0.6
+.profile-block
+    padding-bottom: 20px
+    padding-top: 20px
+    padding-left: 20px
+    padding-right: 20px
+    margin: 0px 0px 0px 30px
+    border-radius: 25px
+    background-color: $white
+    text-align: center
+    &__name
+        display: flex
+        background-color: #F5F5F5
+        width: 297px
+        height: 70px
+        max-width: 100%
+        padding-top: 16px
+        padding-left: 17px
+        margin: auto
+        margin-bottom: 20px
+        border-radius: 10px
+    &__button
+        max-width: 100%
+        width: 298px
+        height: 70px
+    &__link
+        font-family: DM Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 13px
+        line-height: 17px
+        letter-spacing: -0.326667px
+        color: $main-orange
+    &__text
+        padding-left: 10px
+        font-family: DM Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: -0.376923px
+        color: $black
+        
+.input
+    &_normal
+        border: 1px solid #EBEBEB
+        box-sizing: border-box
+        border-radius: 10px
+        width: 297.76px
+        height: 60px
+        margin-bottom: 10px
+        max-width: 100%
+        padding-left: 20px
+.textarea
+    border: 1px solid #EBEBEB
+    box-sizing: border-box
+    border-radius: 10px
+    width: 297.76px
+    height: 100px
+    margin-bottom: 10px
+    max-width: 100%
+    padding: 20px
+@media only screen and (max-width: 1199px)
+    .profile-block
+        &__name
+            p
+                padding-left: 10px
+@media only screen and (max-width: 991px)
+    .profile-block
+        margin: -100px 120px 0px 120px
+        &__button
+            max-width: 100%
+    .info
+        &__text
+            &_small
+                border-right: 1px solid $light-green
+                border-top: 1px solid $light-green
+                &:last-child
+                    flex-grow: 1
+                &:nth-last-child(1)
+                    border-bottom: 1px solid $light-green
+@media only screen and (max-width: 767px)
+    .profile-block
+        margin: -100px 0px 0px 0px

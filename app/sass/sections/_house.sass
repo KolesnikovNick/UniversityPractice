@@ -1,0 +1,27 @@
+.house
+    padding-top: 21px
+    padding-bottom: 22px
+    background: $house-gradient
+    &__info
+        display: flex
+        justify-content: space-between
+    &__text
+        &_right
+            float: right
+        &_small
+            font-family: DM Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 24px
+            letter-spacing: -0.376923px
+            color: $white
+            mix-blend-mode: normal
+            opacity: 0.6
+            &:first-child
+                float: left
+@media only screen and (max-width: 991px)
+    .house
+        &__text
+            &_small
+                font-size: 11px

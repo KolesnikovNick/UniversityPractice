@@ -1,0 +1,106 @@
+.footer
+	&__dreams
+		display: flex
+		justify-content: space-between
+	background: $footer-gradient
+	&__container
+		padding-top: 80px
+		padding-bottom: 150px
+	&__text
+		font-family: DM Sans
+		font-style: normal
+		font-weight: bold
+		font-size: 42px
+		line-height: 55px
+		letter-spacing: -1.05538px
+		color: $white
+	&__button
+		background-color: $main-orange
+		width: 211px
+		height: 70px
+.links
+	border-top: 1px solid rgba(97,97,97,0.1)
+	margin-top: 50px
+	padding-top: 60px
+	display: flex
+	justify-content: space-between
+	&__contacts
+		margin-right: 271px
+	&__media
+		display: flex
+		justify-content: space-between
+	.social-media
+		color: $white
+		font-size: 22px
+		padding: 30.5px 0px 0px 0px
+		&:hover
+			color: $main-orange
+	&__item
+		& ul
+			font-family: DM Sans
+			font-style: normal
+			font-weight: bold
+			font-size: 15px
+			line-height: 20px
+			letter-spacing: -0.376923px
+			color: $white
+			list-style: none
+		& li
+			margin-top: 8px
+			font-weight: normal
+			letter-spacing: -0.376923px
+			& a
+				text-decoration: none
+				color: #979797
+			& a:hover
+				color: $main-orange
+	&__icon
+		margin-left: 15px
+
+@media only screen and (max-width: 1240px)
+	.footer
+		&__button
+			margin-left: -50px
+
+@media only screen and (max-width: 992px)
+	.footer
+		&__dreams
+			display: inherit
+		&__container
+			text-align: center
+		&__text
+			font-size: 25px
+			line-height: 33px
+			letter-spacing: -0.75px
+		&__button
+			margin-top: 60px
+			margin-left: 0px
+	.links
+		flex-direction: row
+		flex-wrap: wrap
+		&__media
+			justify-content: center
+			.social-media
+				padding-right: 20px
+				padding-left: 20px
+		&__contacts
+			width: 100%
+			margin: 60px auto 0px auto
+			order: 4
+		&__item
+			width: 50%
+			&:last-child
+				padding-top: 60px
+			& ul 
+
+@media only screen and (max-width: 767px)
+	.footer
+		&__container
+			text-align: center
+		&__text
+			font-size: 25px
+			line-height: 33px
+			letter-spacing: -0.75px
+		&__button
+			height: 70px
+			max-width: 100%

@@ -1,0 +1,61 @@
+.quote
+    background-color: $white
+    &__container
+        padding: 150px 0px
+    &__line
+        margin-bottom: 40px
+    &__text
+        text-align: center
+        font-family: DM Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 31px
+        letter-spacing: -0.603077px
+        color: $black
+        &_invisible
+            text-align: left
+            font-size: 15px
+            font-weight: normal
+            color: #979797
+    &__avatar
+        padding-right: 20px
+    &__hidden
+        position: relative
+        z-index: -1
+        bottom: -200px
+        padding-bottom: 91px
+        opacity: 0
+        transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out
+    &__man
+        font-family: DM Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: -0.376923px
+        padding: 46px 0px 46px 40px
+        &:hover
+            background-color: $black
+            color: $white
+            transition: background-color 0.5s ease-in-out
+    &__info
+        display: flex
+@media only screen and (max-width: 991px)
+    .quote
+        &__man
+            font-size: 13px
+        &__container
+            padding-top: 101px
+        &__text
+            text-align: center
+            margin: 61px 0pxpx 60px 29px
+            padding-right: 29px
+            font-size: 21px
+            line-height: 21px
+            letter-spacing: -0.398237px
+            &_invisible
+                text-align: left
+                font-size: 15px
+        &__line
+            max-width: 100%
